@@ -1,0 +1,438 @@
+Prefix(:=<http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(swrl:=<http://www.w3.org/2003/11/swrl#>)
+Prefix(swrla:=<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#>)
+Prefix(swrlb:=<http://www.w3.org/2003/11/swrlb#>)
+
+
+Ontology(<http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi>
+
+Declaration(Class(:Alumno))
+Declaration(Class(:Beca))
+Declaration(Class(:BecaAprobada))
+Declaration(Class(:BecaEnEstudio))
+Declaration(Class(:BecaParcial))
+Declaration(Class(:BecaParcialA))
+Declaration(Class(:BecaParcialB))
+Declaration(Class(:BecaRechazada))
+Declaration(Class(:BecaTotal))
+Declaration(ObjectProperty(:tieneBeca))
+Declaration(DataProperty(:cantidadHermanos))
+Declaration(DataProperty(:dni))
+Declaration(DataProperty(:hermanosCotaInferior))
+Declaration(DataProperty(:hermanosCotaSuperior))
+Declaration(DataProperty(:ingresosCotaInferior))
+Declaration(DataProperty(:ingresosCotaSuperior))
+Declaration(DataProperty(:ingresosNetosCorregidos))
+Declaration(DataProperty(:nombreCompleto))
+Declaration(NamedIndividual(:BecaParcialA))
+Declaration(NamedIndividual(:BecaParcialB))
+Declaration(NamedIndividual(:BecaRechazada))
+Declaration(NamedIndividual(:BecaTotal))
+Declaration(NamedIndividual(:alangómez35124798))
+Declaration(NamedIndividual(:alejandrorosas35124804))
+Declaration(NamedIndividual(:alexisrey35124797))
+Declaration(NamedIndividual(:becaEnEstudio))
+Declaration(NamedIndividual(:camilatemperini35124792))
+Declaration(NamedIndividual(:ernestinaviola35124802))
+Declaration(NamedIndividual(:gerónimobigliani35664525))
+Declaration(NamedIndividual(:gustavofuensalida35664523))
+Declaration(NamedIndividual(:jorgeperez35124793))
+Declaration(NamedIndividual(:juanadonnent35124791))
+Declaration(NamedIndividual(:juangarcía35124789))
+Declaration(NamedIndividual(:lucastibaldo35124794))
+Declaration(NamedIndividual(:luciagarcia35124795))
+Declaration(NamedIndividual(:lucianamoyano35124799))
+Declaration(NamedIndividual(:ludmilatort35124801))
+Declaration(NamedIndividual(:marianareynoso35124796))
+Declaration(NamedIndividual(:mariaramirez35124790))
+Declaration(NamedIndividual(:martíndisalvo35664527))
+Declaration(NamedIndividual(:nicoláshan35664526))
+Declaration(NamedIndividual(:rachelsmith35124800))
+Declaration(NamedIndividual(:robertogalarza35664521))
+Declaration(NamedIndividual(:santiagocelenca35664522))
+Declaration(NamedIndividual(:sebastiánfernández35664524))
+Declaration(NamedIndividual(:tomásramirez35124803))
+Declaration(AnnotationProperty(swrla:isRuleEnabled))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: :tieneBeca (:tieneBeca)
+
+ObjectPropertyDomain(:tieneBeca :Alumno)
+ObjectPropertyRange(:tieneBeca :Beca)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: :dni (:dni)
+
+DataPropertyDomain(:dni :Alumno)
+DataPropertyRange(:dni xsd:nonNegativeInteger)
+
+# Data Property: :hermanosCotaInferior (:hermanosCotaInferior)
+
+DataPropertyDomain(:hermanosCotaInferior :Beca)
+DataPropertyRange(:hermanosCotaInferior xsd:nonNegativeInteger)
+
+# Data Property: :hermanosCotaSuperior (:hermanosCotaSuperior)
+
+DataPropertyDomain(:hermanosCotaSuperior :Beca)
+DataPropertyRange(:hermanosCotaSuperior xsd:nonNegativeInteger)
+
+# Data Property: :ingresosCotaInferior (:ingresosCotaInferior)
+
+DataPropertyDomain(:ingresosCotaInferior :Beca)
+DataPropertyRange(:ingresosCotaInferior xsd:nonNegativeInteger)
+
+# Data Property: :ingresosCotaSuperior (:ingresosCotaSuperior)
+
+DataPropertyDomain(:ingresosCotaSuperior :Beca)
+DataPropertyRange(:ingresosCotaSuperior xsd:nonNegativeInteger)
+
+# Data Property: :ingresosNetosCorregidos (:ingresosNetosCorregidos)
+
+DataPropertyDomain(:ingresosNetosCorregidos :Alumno)
+DataPropertyRange(:ingresosNetosCorregidos xsd:nonNegativeInteger)
+
+# Data Property: :nombreCompleto (:nombreCompleto)
+
+DataPropertyDomain(:nombreCompleto :Alumno)
+DataPropertyRange(:nombreCompleto xsd:string)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :BecaAprobada (:BecaAprobada)
+
+SubClassOf(:BecaAprobada :Beca)
+
+# Class: :BecaEnEstudio (:BecaEnEstudio)
+
+SubClassOf(:BecaEnEstudio :Beca)
+
+# Class: :BecaParcial (:BecaParcial)
+
+SubClassOf(:BecaParcial :Beca)
+SubClassOf(:BecaParcial :BecaAprobada)
+DisjointClasses(:BecaParcial :BecaTotal)
+
+# Class: :BecaParcialA (:BecaParcialA)
+
+SubClassOf(:BecaParcialA :Beca)
+SubClassOf(:BecaParcialA :BecaAprobada)
+SubClassOf(:BecaParcialA :BecaParcial)
+
+# Class: :BecaParcialB (:BecaParcialB)
+
+SubClassOf(:BecaParcialB :Beca)
+SubClassOf(:BecaParcialB :BecaAprobada)
+SubClassOf(:BecaParcialB :BecaParcial)
+
+# Class: :BecaRechazada (:BecaRechazada)
+
+SubClassOf(:BecaRechazada :Beca)
+
+# Class: :BecaTotal (:BecaTotal)
+
+SubClassOf(:BecaTotal :Beca)
+SubClassOf(:BecaTotal :BecaAprobada)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :BecaParcialA (:BecaParcialA)
+
+ClassAssertion(:Beca :BecaParcialA)
+ClassAssertion(:BecaAprobada :BecaParcialA)
+ClassAssertion(:BecaParcial :BecaParcialA)
+ClassAssertion(:BecaParcialA :BecaParcialA)
+DataPropertyAssertion(:hermanosCotaInferior :BecaParcialA "3"^^xsd:integer)
+DataPropertyAssertion(:hermanosCotaSuperior :BecaParcialA "9999"^^xsd:integer)
+DataPropertyAssertion(:ingresosCotaInferior :BecaParcialA "60000"^^xsd:integer)
+DataPropertyAssertion(:ingresosCotaSuperior :BecaParcialA "999999999"^^xsd:integer)
+
+# Individual: :BecaParcialB (:BecaParcialB)
+
+ClassAssertion(:Beca :BecaParcialB)
+ClassAssertion(:BecaAprobada :BecaParcialB)
+ClassAssertion(:BecaParcial :BecaParcialB)
+ClassAssertion(:BecaParcialB :BecaParcialB)
+DataPropertyAssertion(:hermanosCotaInferior :BecaParcialB "0"^^xsd:integer)
+DataPropertyAssertion(:hermanosCotaSuperior :BecaParcialB "2"^^xsd:integer)
+DataPropertyAssertion(:ingresosCotaInferior :BecaParcialB "50000"^^xsd:integer)
+DataPropertyAssertion(:ingresosCotaSuperior :BecaParcialB "60000"^^xsd:integer)
+
+# Individual: :BecaRechazada (:BecaRechazada)
+
+ClassAssertion(:Beca :BecaRechazada)
+ClassAssertion(:BecaRechazada :BecaRechazada)
+DataPropertyAssertion(:hermanosCotaInferior :BecaRechazada "0"^^xsd:integer)
+DataPropertyAssertion(:hermanosCotaSuperior :BecaRechazada "2"^^xsd:integer)
+DataPropertyAssertion(:ingresosCotaInferior :BecaRechazada "60000"^^xsd:integer)
+DataPropertyAssertion(:ingresosCotaSuperior :BecaRechazada "999999999"^^xsd:integer)
+
+# Individual: :BecaTotal (:BecaTotal)
+
+ClassAssertion(:Beca :BecaTotal)
+ClassAssertion(:BecaAprobada :BecaTotal)
+ClassAssertion(:BecaTotal :BecaTotal)
+DataPropertyAssertion(:hermanosCotaInferior :BecaTotal "0"^^xsd:integer)
+DataPropertyAssertion(:hermanosCotaSuperior :BecaTotal "9999"^^xsd:integer)
+DataPropertyAssertion(:ingresosCotaInferior :BecaTotal "0"^^xsd:integer)
+DataPropertyAssertion(:ingresosCotaSuperior :BecaTotal "50000"^^xsd:integer)
+
+# Individual: :alangómez35124798 (:alangómez35124798)
+
+ClassAssertion(:Alumno :alangómez35124798)
+ObjectPropertyAssertion(:tieneBeca :alangómez35124798 :BecaRechazada)
+ObjectPropertyAssertion(:tieneBeca :alangómez35124798 :becaEnEstudio)
+DataPropertyAssertion(:cantidadHermanos :alangómez35124798 "1"^^xsd:integer)
+DataPropertyAssertion(:dni :alangómez35124798 "35124798"^^xsd:integer)
+DataPropertyAssertion(:ingresosNetosCorregidos :alangómez35124798 "130000"^^xsd:integer)
+DataPropertyAssertion(:nombreCompleto :alangómez35124798 "Alan Gómez"^^xsd:string)
+
+# Individual: :alejandrorosas35124804 (:alejandrorosas35124804)
+
+ClassAssertion(:Alumno :alejandrorosas35124804)
+ObjectPropertyAssertion(:tieneBeca :alejandrorosas35124804 :BecaRechazada)
+ObjectPropertyAssertion(:tieneBeca :alejandrorosas35124804 :becaEnEstudio)
+DataPropertyAssertion(:cantidadHermanos :alejandrorosas35124804 "1"^^xsd:integer)
+DataPropertyAssertion(:dni :alejandrorosas35124804 "35124804"^^xsd:integer)
+DataPropertyAssertion(:ingresosNetosCorregidos :alejandrorosas35124804 "130000"^^xsd:integer)
+DataPropertyAssertion(:nombreCompleto :alejandrorosas35124804 "Alejandro Rosas"^^xsd:string)
+
+# Individual: :alexisrey35124797 (:alexisrey35124797)
+
+ClassAssertion(:Alumno :alexisrey35124797)
+ObjectPropertyAssertion(:tieneBeca :alexisrey35124797 :BecaRechazada)
+ObjectPropertyAssertion(:tieneBeca :alexisrey35124797 :becaEnEstudio)
+DataPropertyAssertion(:cantidadHermanos :alexisrey35124797 "2"^^xsd:integer)
+DataPropertyAssertion(:dni :alexisrey35124797 "35124797"^^xsd:integer)
+DataPropertyAssertion(:ingresosNetosCorregidos :alexisrey35124797 "240000"^^xsd:integer)
+DataPropertyAssertion(:nombreCompleto :alexisrey35124797 "Alexis Rey"^^xsd:string)
+
+# Individual: :becaEnEstudio (:becaEnEstudio)
+
+ClassAssertion(:Beca :becaEnEstudio)
+ClassAssertion(:BecaEnEstudio :becaEnEstudio)
+
+# Individual: :camilatemperini35124792 (:camilatemperini35124792)
+
+ClassAssertion(:Alumno :camilatemperini35124792)
+ObjectPropertyAssertion(:tieneBeca :camilatemperini35124792 :BecaRechazada)
+ObjectPropertyAssertion(:tieneBeca :camilatemperini35124792 :becaEnEstudio)
+DataPropertyAssertion(:cantidadHermanos :camilatemperini35124792 "1"^^xsd:integer)
+DataPropertyAssertion(:dni :camilatemperini35124792 "35124792"^^xsd:integer)
+DataPropertyAssertion(:ingresosNetosCorregidos :camilatemperini35124792 "75000"^^xsd:integer)
+DataPropertyAssertion(:nombreCompleto :camilatemperini35124792 "Camila Temperini"^^xsd:string)
+
+# Individual: :ernestinaviola35124802 (:ernestinaviola35124802)
+
+ClassAssertion(:Alumno :ernestinaviola35124802)
+ObjectPropertyAssertion(:tieneBeca :ernestinaviola35124802 :BecaRechazada)
+ObjectPropertyAssertion(:tieneBeca :ernestinaviola35124802 :becaEnEstudio)
+DataPropertyAssertion(:cantidadHermanos :ernestinaviola35124802 "1"^^xsd:integer)
+DataPropertyAssertion(:dni :ernestinaviola35124802 "35124802"^^xsd:integer)
+DataPropertyAssertion(:ingresosNetosCorregidos :ernestinaviola35124802 "90000"^^xsd:integer)
+DataPropertyAssertion(:nombreCompleto :ernestinaviola35124802 "Ernestina Viola"^^xsd:string)
+
+# Individual: :gerónimobigliani35664525 (:gerónimobigliani35664525)
+
+ClassAssertion(:Alumno :gerónimobigliani35664525)
+ObjectPropertyAssertion(:tieneBeca :gerónimobigliani35664525 :BecaTotal)
+ObjectPropertyAssertion(:tieneBeca :gerónimobigliani35664525 :becaEnEstudio)
+DataPropertyAssertion(:cantidadHermanos :gerónimobigliani35664525 "3"^^xsd:integer)
+DataPropertyAssertion(:dni :gerónimobigliani35664525 "35664525"^^xsd:integer)
+DataPropertyAssertion(:ingresosNetosCorregidos :gerónimobigliani35664525 "35000"^^xsd:integer)
+DataPropertyAssertion(:nombreCompleto :gerónimobigliani35664525 "Gerónimo Bigliani"^^xsd:string)
+
+# Individual: :gustavofuensalida35664523 (:gustavofuensalida35664523)
+
+ClassAssertion(:Alumno :gustavofuensalida35664523)
+ObjectPropertyAssertion(:tieneBeca :gustavofuensalida35664523 :BecaParcialB)
+ObjectPropertyAssertion(:tieneBeca :gustavofuensalida35664523 :becaEnEstudio)
+DataPropertyAssertion(:cantidadHermanos :gustavofuensalida35664523 "0"^^xsd:integer)
+DataPropertyAssertion(:dni :gustavofuensalida35664523 "35664523"^^xsd:integer)
+DataPropertyAssertion(:ingresosNetosCorregidos :gustavofuensalida35664523 "51000"^^xsd:integer)
+DataPropertyAssertion(:nombreCompleto :gustavofuensalida35664523 "Gustavo Fuensalida"^^xsd:string)
+
+# Individual: :jorgeperez35124793 (:jorgeperez35124793)
+
+ClassAssertion(:Alumno :jorgeperez35124793)
+ObjectPropertyAssertion(:tieneBeca :jorgeperez35124793 :BecaRechazada)
+ObjectPropertyAssertion(:tieneBeca :jorgeperez35124793 :becaEnEstudio)
+DataPropertyAssertion(:cantidadHermanos :jorgeperez35124793 "2"^^xsd:integer)
+DataPropertyAssertion(:dni :jorgeperez35124793 "35124793"^^xsd:integer)
+DataPropertyAssertion(:ingresosNetosCorregidos :jorgeperez35124793 "90000"^^xsd:integer)
+DataPropertyAssertion(:nombreCompleto :jorgeperez35124793 "Jorge Perez"^^xsd:string)
+
+# Individual: :juanadonnent35124791 (:juanadonnent35124791)
+
+ClassAssertion(:Alumno :juanadonnent35124791)
+ObjectPropertyAssertion(:tieneBeca :juanadonnent35124791 :BecaParcialA)
+ObjectPropertyAssertion(:tieneBeca :juanadonnent35124791 :becaEnEstudio)
+DataPropertyAssertion(:cantidadHermanos :juanadonnent35124791 "3"^^xsd:integer)
+DataPropertyAssertion(:dni :juanadonnent35124791 "35124791"^^xsd:integer)
+DataPropertyAssertion(:ingresosNetosCorregidos :juanadonnent35124791 "185000"^^xsd:integer)
+DataPropertyAssertion(:nombreCompleto :juanadonnent35124791 "Juana Donnent"^^xsd:string)
+
+# Individual: :juangarcía35124789 (:juangarcía35124789)
+
+ClassAssertion(:Alumno :juangarcía35124789)
+ObjectPropertyAssertion(:tieneBeca :juangarcía35124789 :BecaRechazada)
+ObjectPropertyAssertion(:tieneBeca :juangarcía35124789 :becaEnEstudio)
+DataPropertyAssertion(:cantidadHermanos :juangarcía35124789 "1"^^xsd:integer)
+DataPropertyAssertion(:dni :juangarcía35124789 "35124789"^^xsd:integer)
+DataPropertyAssertion(:ingresosNetosCorregidos :juangarcía35124789 "180000"^^xsd:integer)
+DataPropertyAssertion(:nombreCompleto :juangarcía35124789 "Juan García"^^xsd:string)
+
+# Individual: :lucastibaldo35124794 (:lucastibaldo35124794)
+
+ClassAssertion(:Alumno :lucastibaldo35124794)
+ObjectPropertyAssertion(:tieneBeca :lucastibaldo35124794 :BecaRechazada)
+ObjectPropertyAssertion(:tieneBeca :lucastibaldo35124794 :becaEnEstudio)
+DataPropertyAssertion(:cantidadHermanos :lucastibaldo35124794 "1"^^xsd:integer)
+DataPropertyAssertion(:dni :lucastibaldo35124794 "35124794"^^xsd:integer)
+DataPropertyAssertion(:ingresosNetosCorregidos :lucastibaldo35124794 "70000"^^xsd:integer)
+DataPropertyAssertion(:nombreCompleto :lucastibaldo35124794 "Lucas Tibaldo"^^xsd:string)
+
+# Individual: :luciagarcia35124795 (:luciagarcia35124795)
+
+ClassAssertion(:Alumno :luciagarcia35124795)
+ObjectPropertyAssertion(:tieneBeca :luciagarcia35124795 :BecaRechazada)
+ObjectPropertyAssertion(:tieneBeca :luciagarcia35124795 :becaEnEstudio)
+DataPropertyAssertion(:cantidadHermanos :luciagarcia35124795 "2"^^xsd:integer)
+DataPropertyAssertion(:dni :luciagarcia35124795 "35124795"^^xsd:integer)
+DataPropertyAssertion(:ingresosNetosCorregidos :luciagarcia35124795 "210000"^^xsd:integer)
+DataPropertyAssertion(:nombreCompleto :luciagarcia35124795 "Lucia Garcia"^^xsd:string)
+
+# Individual: :lucianamoyano35124799 (:lucianamoyano35124799)
+
+ClassAssertion(:Alumno :lucianamoyano35124799)
+ObjectPropertyAssertion(:tieneBeca :lucianamoyano35124799 :BecaRechazada)
+ObjectPropertyAssertion(:tieneBeca :lucianamoyano35124799 :becaEnEstudio)
+DataPropertyAssertion(:cantidadHermanos :lucianamoyano35124799 "1"^^xsd:integer)
+DataPropertyAssertion(:dni :lucianamoyano35124799 "35124799"^^xsd:integer)
+DataPropertyAssertion(:ingresosNetosCorregidos :lucianamoyano35124799 "115000"^^xsd:integer)
+DataPropertyAssertion(:nombreCompleto :lucianamoyano35124799 "Luciana Moyano"^^xsd:string)
+
+# Individual: :ludmilatort35124801 (:ludmilatort35124801)
+
+ClassAssertion(:Alumno :ludmilatort35124801)
+ObjectPropertyAssertion(:tieneBeca :ludmilatort35124801 :BecaRechazada)
+ObjectPropertyAssertion(:tieneBeca :ludmilatort35124801 :becaEnEstudio)
+DataPropertyAssertion(:cantidadHermanos :ludmilatort35124801 "2"^^xsd:integer)
+DataPropertyAssertion(:dni :ludmilatort35124801 "35124801"^^xsd:integer)
+DataPropertyAssertion(:ingresosNetosCorregidos :ludmilatort35124801 "115000"^^xsd:integer)
+DataPropertyAssertion(:nombreCompleto :ludmilatort35124801 "Ludmila Tort"^^xsd:string)
+
+# Individual: :marianareynoso35124796 (:marianareynoso35124796)
+
+ClassAssertion(:Alumno :marianareynoso35124796)
+ObjectPropertyAssertion(:tieneBeca :marianareynoso35124796 :BecaRechazada)
+ObjectPropertyAssertion(:tieneBeca :marianareynoso35124796 :becaEnEstudio)
+DataPropertyAssertion(:cantidadHermanos :marianareynoso35124796 "1"^^xsd:integer)
+DataPropertyAssertion(:dni :marianareynoso35124796 "35124796"^^xsd:integer)
+DataPropertyAssertion(:ingresosNetosCorregidos :marianareynoso35124796 "155000"^^xsd:integer)
+DataPropertyAssertion(:nombreCompleto :marianareynoso35124796 "Mariana Reynoso"^^xsd:string)
+
+# Individual: :mariaramirez35124790 (:mariaramirez35124790)
+
+ClassAssertion(:Alumno :mariaramirez35124790)
+ObjectPropertyAssertion(:tieneBeca :mariaramirez35124790 :BecaRechazada)
+ObjectPropertyAssertion(:tieneBeca :mariaramirez35124790 :becaEnEstudio)
+DataPropertyAssertion(:cantidadHermanos :mariaramirez35124790 "2"^^xsd:integer)
+DataPropertyAssertion(:dni :mariaramirez35124790 "35124790"^^xsd:integer)
+DataPropertyAssertion(:ingresosNetosCorregidos :mariaramirez35124790 "135000"^^xsd:integer)
+DataPropertyAssertion(:nombreCompleto :mariaramirez35124790 "Maria Ramirez"^^xsd:string)
+
+# Individual: :martíndisalvo35664527 (:martíndisalvo35664527)
+
+ClassAssertion(:Alumno :martíndisalvo35664527)
+ObjectPropertyAssertion(:tieneBeca :martíndisalvo35664527 :BecaTotal)
+ObjectPropertyAssertion(:tieneBeca :martíndisalvo35664527 :becaEnEstudio)
+DataPropertyAssertion(:cantidadHermanos :martíndisalvo35664527 "0"^^xsd:integer)
+DataPropertyAssertion(:dni :martíndisalvo35664527 "35664527"^^xsd:integer)
+DataPropertyAssertion(:ingresosNetosCorregidos :martíndisalvo35664527 "40000"^^xsd:integer)
+DataPropertyAssertion(:nombreCompleto :martíndisalvo35664527 "Martín Disalvo"^^xsd:string)
+
+# Individual: :nicoláshan35664526 (:nicoláshan35664526)
+
+ClassAssertion(:Alumno :nicoláshan35664526)
+ObjectPropertyAssertion(:tieneBeca :nicoláshan35664526 :BecaParcialA)
+ObjectPropertyAssertion(:tieneBeca :nicoláshan35664526 :becaEnEstudio)
+DataPropertyAssertion(:cantidadHermanos :nicoláshan35664526 "3"^^xsd:integer)
+DataPropertyAssertion(:dni :nicoláshan35664526 "35664526"^^xsd:integer)
+DataPropertyAssertion(:ingresosNetosCorregidos :nicoláshan35664526 "350000"^^xsd:integer)
+DataPropertyAssertion(:nombreCompleto :nicoláshan35664526 "Nicolás Han"^^xsd:string)
+
+# Individual: :rachelsmith35124800 (:rachelsmith35124800)
+
+ClassAssertion(:Alumno :rachelsmith35124800)
+ObjectPropertyAssertion(:tieneBeca :rachelsmith35124800 :BecaRechazada)
+ObjectPropertyAssertion(:tieneBeca :rachelsmith35124800 :becaEnEstudio)
+DataPropertyAssertion(:cantidadHermanos :rachelsmith35124800 "1"^^xsd:integer)
+DataPropertyAssertion(:dni :rachelsmith35124800 "35124800"^^xsd:integer)
+DataPropertyAssertion(:ingresosNetosCorregidos :rachelsmith35124800 "140000"^^xsd:integer)
+DataPropertyAssertion(:nombreCompleto :rachelsmith35124800 "Rachel Smith"^^xsd:string)
+
+# Individual: :robertogalarza35664521 (:robertogalarza35664521)
+
+ClassAssertion(:Alumno :robertogalarza35664521)
+ObjectPropertyAssertion(:tieneBeca :robertogalarza35664521 :BecaParcialB)
+ObjectPropertyAssertion(:tieneBeca :robertogalarza35664521 :becaEnEstudio)
+DataPropertyAssertion(:cantidadHermanos :robertogalarza35664521 "1"^^xsd:integer)
+DataPropertyAssertion(:dni :robertogalarza35664521 "35664521"^^xsd:integer)
+DataPropertyAssertion(:ingresosNetosCorregidos :robertogalarza35664521 "55000"^^xsd:integer)
+DataPropertyAssertion(:nombreCompleto :robertogalarza35664521 "Roberto Galarza"^^xsd:string)
+
+# Individual: :santiagocelenca35664522 (:santiagocelenca35664522)
+
+ClassAssertion(:Alumno :santiagocelenca35664522)
+ObjectPropertyAssertion(:tieneBeca :santiagocelenca35664522 :BecaParcialA)
+ObjectPropertyAssertion(:tieneBeca :santiagocelenca35664522 :becaEnEstudio)
+DataPropertyAssertion(:cantidadHermanos :santiagocelenca35664522 "5"^^xsd:integer)
+DataPropertyAssertion(:dni :santiagocelenca35664522 "35664522"^^xsd:integer)
+DataPropertyAssertion(:ingresosNetosCorregidos :santiagocelenca35664522 "200000"^^xsd:integer)
+DataPropertyAssertion(:nombreCompleto :santiagocelenca35664522 "Santiago Celenca"^^xsd:string)
+
+# Individual: :sebastiánfernández35664524 (:sebastiánfernández35664524)
+
+ClassAssertion(:Alumno :sebastiánfernández35664524)
+ObjectPropertyAssertion(:tieneBeca :sebastiánfernández35664524 :BecaTotal)
+ObjectPropertyAssertion(:tieneBeca :sebastiánfernández35664524 :becaEnEstudio)
+DataPropertyAssertion(:cantidadHermanos :sebastiánfernández35664524 "1"^^xsd:integer)
+DataPropertyAssertion(:dni :sebastiánfernández35664524 "35664524"^^xsd:integer)
+DataPropertyAssertion(:ingresosNetosCorregidos :sebastiánfernández35664524 "25000"^^xsd:integer)
+DataPropertyAssertion(:nombreCompleto :sebastiánfernández35664524 "Sebastián Fernández"^^xsd:string)
+
+# Individual: :tomásramirez35124803 (:tomásramirez35124803)
+
+ClassAssertion(:Alumno :tomásramirez35124803)
+ObjectPropertyAssertion(:tieneBeca :tomásramirez35124803 :BecaRechazada)
+ObjectPropertyAssertion(:tieneBeca :tomásramirez35124803 :becaEnEstudio)
+DataPropertyAssertion(:cantidadHermanos :tomásramirez35124803 "0"^^xsd:integer)
+DataPropertyAssertion(:dni :tomásramirez35124803 "35124803"^^xsd:integer)
+DataPropertyAssertion(:ingresosNetosCorregidos :tomásramirez35124803 "95000"^^xsd:integer)
+DataPropertyAssertion(:nombreCompleto :tomásramirez35124803 "Tomás Ramirez"^^xsd:string)
+
+
+DLSafeRule(Annotation(swrla:isRuleEnabled "true"^^xsd:boolean) Annotation(rdfs:comment "Cuando se acepta media beca"^^xsd:string) Annotation(rdfs:label "BecaParcialA"^^xsd:string) Body(DataPropertyAtom(:ingresosCotaInferior Variable(:b) Variable(:ii)) BuiltInAtom(swrlb:greaterThanOrEqual Variable(:h) Variable(:hi)) BuiltInAtom(swrlb:lessThanOrEqual Variable(:h) Variable(:hs)) DataPropertyAtom(:cantidadHermanos Variable(:x) Variable(:h)) ClassAtom(:BecaParcialA Variable(:b)) BuiltInAtom(swrlb:lessThan Variable(:y) Variable(:is)) BuiltInAtom(swrlb:greaterThan Variable(:y) Variable(:ii)) DataPropertyAtom(:ingresosCotaSuperior Variable(:b) Variable(:is)) DataPropertyAtom(:ingresosNetosCorregidos Variable(:x) Variable(:y)) ClassAtom(:Alumno Variable(:x)) DataPropertyAtom(:hermanosCotaSuperior Variable(:b) Variable(:hs)) DataPropertyAtom(:hermanosCotaInferior Variable(:b) Variable(:hi)))Head(ObjectPropertyAtom(:tieneBeca Variable(:x) Variable(:b))))
+DLSafeRule(Annotation(swrla:isRuleEnabled "true"^^xsd:boolean) Annotation(rdfs:comment "Cuando se acepta media beca"^^xsd:string) Annotation(rdfs:label "BecaParcialB"^^xsd:string) Body(DataPropertyAtom(:ingresosCotaInferior Variable(:b) Variable(:ii)) BuiltInAtom(swrlb:greaterThanOrEqual Variable(:h) Variable(:hi)) BuiltInAtom(swrlb:lessThanOrEqual Variable(:h) Variable(:hs)) ClassAtom(:BecaParcialB Variable(:b)) DataPropertyAtom(:cantidadHermanos Variable(:x) Variable(:h)) BuiltInAtom(swrlb:lessThan Variable(:y) Variable(:is)) BuiltInAtom(swrlb:greaterThan Variable(:y) Variable(:ii)) DataPropertyAtom(:ingresosCotaSuperior Variable(:b) Variable(:is)) DataPropertyAtom(:ingresosNetosCorregidos Variable(:x) Variable(:y)) ClassAtom(:Alumno Variable(:x)) DataPropertyAtom(:hermanosCotaSuperior Variable(:b) Variable(:hs)) DataPropertyAtom(:hermanosCotaInferior Variable(:b) Variable(:hi)))Head(ObjectPropertyAtom(:tieneBeca Variable(:x) Variable(:b))))
+DLSafeRule(Annotation(swrla:isRuleEnabled "true"^^xsd:boolean) Annotation(rdfs:comment "Cuando la beca no es aceptada"^^xsd:string) Annotation(rdfs:label "BecaRechazada"^^xsd:string) Body(DataPropertyAtom(:ingresosCotaInferior Variable(:b) Variable(:ii)) BuiltInAtom(swrlb:greaterThanOrEqual Variable(:h) Variable(:hi)) BuiltInAtom(swrlb:lessThanOrEqual Variable(:h) Variable(:hs)) DataPropertyAtom(:cantidadHermanos Variable(:x) Variable(:h)) ClassAtom(:BecaRechazada Variable(:b)) BuiltInAtom(swrlb:lessThan Variable(:y) Variable(:is)) BuiltInAtom(swrlb:greaterThan Variable(:y) Variable(:ii)) DataPropertyAtom(:ingresosCotaSuperior Variable(:b) Variable(:is)) DataPropertyAtom(:ingresosNetosCorregidos Variable(:x) Variable(:y)) ClassAtom(:Alumno Variable(:x)) DataPropertyAtom(:hermanosCotaSuperior Variable(:b) Variable(:hs)) DataPropertyAtom(:hermanosCotaInferior Variable(:b) Variable(:hi)))Head(ObjectPropertyAtom(:tieneBeca Variable(:x) Variable(:b))))
+DLSafeRule(Annotation(swrla:isRuleEnabled "true"^^xsd:boolean) Annotation(rdfs:comment "Cuando se acepta la totalidad de la beca"^^xsd:string) Annotation(rdfs:label "BecaTotal"^^xsd:string) Body(DataPropertyAtom(:ingresosCotaInferior Variable(:b) Variable(:ii)) BuiltInAtom(swrlb:greaterThanOrEqual Variable(:h) Variable(:hi)) BuiltInAtom(swrlb:lessThanOrEqual Variable(:h) Variable(:hs)) DataPropertyAtom(:cantidadHermanos Variable(:x) Variable(:h)) ClassAtom(:BecaTotal Variable(:b)) BuiltInAtom(swrlb:lessThan Variable(:y) Variable(:is)) BuiltInAtom(swrlb:greaterThan Variable(:y) Variable(:ii)) DataPropertyAtom(:ingresosCotaSuperior Variable(:b) Variable(:is)) DataPropertyAtom(:ingresosNetosCorregidos Variable(:x) Variable(:y)) ClassAtom(:Alumno Variable(:x)) DataPropertyAtom(:hermanosCotaSuperior Variable(:b) Variable(:hs)) DataPropertyAtom(:hermanosCotaInferior Variable(:b) Variable(:hi)))Head(ObjectPropertyAtom(:tieneBeca Variable(:x) Variable(:b))))
+)

@@ -1,0 +1,1387 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#"
+     xml:base="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#tieneBeca -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#tieneBeca">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Beca"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#cantidadHermanos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#cantidadHermanos"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#dni -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#dni">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#hermanosCotaInferior -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#hermanosCotaInferior">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Beca"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#hermanosCotaSuperior -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#hermanosCotaSuperior">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Beca"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#ingresosCotaInferior -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#ingresosCotaInferior">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Beca"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#ingresosCotaSuperior -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#ingresosCotaSuperior">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Beca"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#ingresosNetosCorregidos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#ingresosNetosCorregidos">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#nombreCompleto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#nombreCompleto">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Beca -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Beca"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaAprobada -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaAprobada">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Beca"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaEnEstudio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaEnEstudio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Beca"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaParcial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaParcial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Beca"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaAprobada"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaTotal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaParcialA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaParcialA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Beca"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaAprobada"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaParcial"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaParcialB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaParcialB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Beca"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaAprobada"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaParcial"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaRechazada -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaRechazada">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Beca"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaTotal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaTotal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Beca"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaAprobada"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaParcialA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaParcialA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Beca"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaAprobada"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaParcial"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaParcialA"/>
+        <hermanosCotaInferior rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hermanosCotaInferior>
+        <hermanosCotaSuperior rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9999</hermanosCotaSuperior>
+        <ingresosCotaInferior rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60000</ingresosCotaInferior>
+        <ingresosCotaSuperior rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">999999999</ingresosCotaSuperior>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaParcialB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaParcialB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Beca"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaAprobada"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaParcial"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaParcialB"/>
+        <hermanosCotaInferior rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hermanosCotaInferior>
+        <hermanosCotaSuperior rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hermanosCotaSuperior>
+        <ingresosCotaInferior rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50000</ingresosCotaInferior>
+        <ingresosCotaSuperior rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60000</ingresosCotaSuperior>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaRechazada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaRechazada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Beca"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaRechazada"/>
+        <hermanosCotaInferior rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hermanosCotaInferior>
+        <hermanosCotaSuperior rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hermanosCotaSuperior>
+        <ingresosCotaInferior rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60000</ingresosCotaInferior>
+        <ingresosCotaSuperior rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">999999999</ingresosCotaSuperior>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaTotal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaTotal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Beca"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaAprobada"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaTotal"/>
+        <hermanosCotaInferior rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hermanosCotaInferior>
+        <hermanosCotaSuperior rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9999</hermanosCotaSuperior>
+        <ingresosCotaInferior rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ingresosCotaInferior>
+        <ingresosCotaSuperior rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50000</ingresosCotaSuperior>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#alangómez35124798 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#alangómez35124798">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaRechazada"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#becaEnEstudio"/>
+        <cantidadHermanos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cantidadHermanos>
+        <dni rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35124798</dni>
+        <ingresosNetosCorregidos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">130000</ingresosNetosCorregidos>
+        <nombreCompleto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alan Gómez</nombreCompleto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#alejandrorosas35124804 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#alejandrorosas35124804">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaRechazada"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#becaEnEstudio"/>
+        <cantidadHermanos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cantidadHermanos>
+        <dni rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35124804</dni>
+        <ingresosNetosCorregidos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">130000</ingresosNetosCorregidos>
+        <nombreCompleto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alejandro Rosas</nombreCompleto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#alexisrey35124797 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#alexisrey35124797">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaRechazada"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#becaEnEstudio"/>
+        <cantidadHermanos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cantidadHermanos>
+        <dni rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35124797</dni>
+        <ingresosNetosCorregidos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">240000</ingresosNetosCorregidos>
+        <nombreCompleto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alexis Rey</nombreCompleto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#becaEnEstudio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#becaEnEstudio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Beca"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaEnEstudio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#camilatemperini35124792 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#camilatemperini35124792">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaRechazada"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#becaEnEstudio"/>
+        <cantidadHermanos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cantidadHermanos>
+        <dni rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35124792</dni>
+        <ingresosNetosCorregidos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75000</ingresosNetosCorregidos>
+        <nombreCompleto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Camila Temperini</nombreCompleto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#ernestinaviola35124802 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#ernestinaviola35124802">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaRechazada"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#becaEnEstudio"/>
+        <cantidadHermanos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cantidadHermanos>
+        <dni rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35124802</dni>
+        <ingresosNetosCorregidos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90000</ingresosNetosCorregidos>
+        <nombreCompleto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ernestina Viola</nombreCompleto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#gerónimobigliani35664525 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#gerónimobigliani35664525">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaTotal"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#becaEnEstudio"/>
+        <cantidadHermanos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</cantidadHermanos>
+        <dni rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35664525</dni>
+        <ingresosNetosCorregidos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35000</ingresosNetosCorregidos>
+        <nombreCompleto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gerónimo Bigliani</nombreCompleto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#gustavofuensalida35664523 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#gustavofuensalida35664523">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaParcialB"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#becaEnEstudio"/>
+        <cantidadHermanos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</cantidadHermanos>
+        <dni rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35664523</dni>
+        <ingresosNetosCorregidos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">51000</ingresosNetosCorregidos>
+        <nombreCompleto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gustavo Fuensalida</nombreCompleto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#jorgeperez35124793 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#jorgeperez35124793">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaRechazada"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#becaEnEstudio"/>
+        <cantidadHermanos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cantidadHermanos>
+        <dni rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35124793</dni>
+        <ingresosNetosCorregidos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90000</ingresosNetosCorregidos>
+        <nombreCompleto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jorge Perez</nombreCompleto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#juanadonnent35124791 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#juanadonnent35124791">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaParcialA"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#becaEnEstudio"/>
+        <cantidadHermanos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</cantidadHermanos>
+        <dni rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35124791</dni>
+        <ingresosNetosCorregidos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">185000</ingresosNetosCorregidos>
+        <nombreCompleto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Juana Donnent</nombreCompleto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#juangarcía35124789 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#juangarcía35124789">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaRechazada"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#becaEnEstudio"/>
+        <cantidadHermanos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cantidadHermanos>
+        <dni rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35124789</dni>
+        <ingresosNetosCorregidos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">180000</ingresosNetosCorregidos>
+        <nombreCompleto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Juan García</nombreCompleto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#lucastibaldo35124794 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#lucastibaldo35124794">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaRechazada"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#becaEnEstudio"/>
+        <cantidadHermanos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cantidadHermanos>
+        <dni rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35124794</dni>
+        <ingresosNetosCorregidos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70000</ingresosNetosCorregidos>
+        <nombreCompleto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lucas Tibaldo</nombreCompleto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#luciagarcia35124795 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#luciagarcia35124795">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaRechazada"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#becaEnEstudio"/>
+        <cantidadHermanos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cantidadHermanos>
+        <dni rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35124795</dni>
+        <ingresosNetosCorregidos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">210000</ingresosNetosCorregidos>
+        <nombreCompleto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lucia Garcia</nombreCompleto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#lucianamoyano35124799 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#lucianamoyano35124799">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaRechazada"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#becaEnEstudio"/>
+        <cantidadHermanos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cantidadHermanos>
+        <dni rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35124799</dni>
+        <ingresosNetosCorregidos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">115000</ingresosNetosCorregidos>
+        <nombreCompleto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Luciana Moyano</nombreCompleto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#ludmilatort35124801 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#ludmilatort35124801">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaRechazada"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#becaEnEstudio"/>
+        <cantidadHermanos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cantidadHermanos>
+        <dni rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35124801</dni>
+        <ingresosNetosCorregidos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">115000</ingresosNetosCorregidos>
+        <nombreCompleto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ludmila Tort</nombreCompleto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#marianareynoso35124796 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#marianareynoso35124796">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaRechazada"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#becaEnEstudio"/>
+        <cantidadHermanos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cantidadHermanos>
+        <dni rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35124796</dni>
+        <ingresosNetosCorregidos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">155000</ingresosNetosCorregidos>
+        <nombreCompleto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mariana Reynoso</nombreCompleto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#mariaramirez35124790 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#mariaramirez35124790">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaRechazada"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#becaEnEstudio"/>
+        <cantidadHermanos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cantidadHermanos>
+        <dni rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35124790</dni>
+        <ingresosNetosCorregidos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">135000</ingresosNetosCorregidos>
+        <nombreCompleto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maria Ramirez</nombreCompleto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#martíndisalvo35664527 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#martíndisalvo35664527">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaTotal"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#becaEnEstudio"/>
+        <cantidadHermanos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</cantidadHermanos>
+        <dni rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35664527</dni>
+        <ingresosNetosCorregidos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40000</ingresosNetosCorregidos>
+        <nombreCompleto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Martín Disalvo</nombreCompleto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#nicoláshan35664526 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#nicoláshan35664526">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaParcialA"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#becaEnEstudio"/>
+        <cantidadHermanos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</cantidadHermanos>
+        <dni rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35664526</dni>
+        <ingresosNetosCorregidos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">350000</ingresosNetosCorregidos>
+        <nombreCompleto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicolás Han</nombreCompleto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#rachelsmith35124800 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#rachelsmith35124800">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaRechazada"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#becaEnEstudio"/>
+        <cantidadHermanos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cantidadHermanos>
+        <dni rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35124800</dni>
+        <ingresosNetosCorregidos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">140000</ingresosNetosCorregidos>
+        <nombreCompleto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rachel Smith</nombreCompleto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#robertogalarza35664521 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#robertogalarza35664521">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaParcialB"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#becaEnEstudio"/>
+        <cantidadHermanos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cantidadHermanos>
+        <dni rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35664521</dni>
+        <ingresosNetosCorregidos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55000</ingresosNetosCorregidos>
+        <nombreCompleto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Roberto Galarza</nombreCompleto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#santiagocelenca35664522 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#santiagocelenca35664522">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaParcialA"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#becaEnEstudio"/>
+        <cantidadHermanos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</cantidadHermanos>
+        <dni rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35664522</dni>
+        <ingresosNetosCorregidos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200000</ingresosNetosCorregidos>
+        <nombreCompleto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Santiago Celenca</nombreCompleto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#sebastiánfernández35664524 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#sebastiánfernández35664524">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaTotal"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#becaEnEstudio"/>
+        <cantidadHermanos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cantidadHermanos>
+        <dni rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35664524</dni>
+        <ingresosNetosCorregidos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25000</ingresosNetosCorregidos>
+        <nombreCompleto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sebastián Fernández</nombreCompleto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#tomásramirez35124803 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#tomásramirez35124803">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaRechazada"/>
+        <tieneBeca rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#becaEnEstudio"/>
+        <cantidadHermanos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</cantidadHermanos>
+        <dni rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35124803</dni>
+        <ingresosNetosCorregidos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">95000</ingresosNetosCorregidos>
+        <nombreCompleto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomás Ramirez</nombreCompleto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#b">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#ii">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#h">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#hi">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#hs">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#is">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cuando se acepta media beca</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BecaParcialA</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#ingresosCotaInferior"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#b"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#ii"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                <swrl:arguments rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#h"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#hi"/>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                        <swrl:arguments rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#h"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#hs"/>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#cantidadHermanos"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#x"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#h"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaParcialA"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#b"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#y"/>
+                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#is"/>
+                                                                </swrl:arguments>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#y"/>
+                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#ii"/>
+                                                                        </swrl:arguments>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#ingresosCotaSuperior"/>
+                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#b"/>
+                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#is"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#ingresosNetosCorregidos"/>
+                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#x"/>
+                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#y"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#x"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                <rdf:first>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#hermanosCotaSuperior"/>
+                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#b"/>
+                                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#hs"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                        <rdf:first>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#hermanosCotaInferior"/>
+                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#b"/>
+                                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#hi"/>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:first>
+                                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#tieneBeca"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cuando se acepta la totalidad de la beca</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BecaTotal</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#ingresosCotaInferior"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#b"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#ii"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                <swrl:arguments rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#h"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#hi"/>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                        <swrl:arguments rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#h"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#hs"/>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#cantidadHermanos"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#x"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#h"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaTotal"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#b"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#y"/>
+                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#is"/>
+                                                                </swrl:arguments>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#y"/>
+                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#ii"/>
+                                                                        </swrl:arguments>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#ingresosCotaSuperior"/>
+                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#b"/>
+                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#is"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#ingresosNetosCorregidos"/>
+                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#x"/>
+                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#y"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#x"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                <rdf:first>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#hermanosCotaSuperior"/>
+                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#b"/>
+                                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#hs"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                        <rdf:first>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#hermanosCotaInferior"/>
+                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#b"/>
+                                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#hi"/>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:first>
+                                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#tieneBeca"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cuando se acepta media beca</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BecaParcialB</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#ingresosCotaInferior"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#b"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#ii"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                <swrl:arguments rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#h"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#hi"/>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                        <swrl:arguments rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#h"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#hs"/>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaParcialB"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#b"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#cantidadHermanos"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#x"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#h"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#y"/>
+                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#is"/>
+                                                                </swrl:arguments>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#y"/>
+                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#ii"/>
+                                                                        </swrl:arguments>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#ingresosCotaSuperior"/>
+                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#b"/>
+                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#is"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#ingresosNetosCorregidos"/>
+                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#x"/>
+                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#y"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#x"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                <rdf:first>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#hermanosCotaSuperior"/>
+                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#b"/>
+                                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#hs"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                        <rdf:first>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#hermanosCotaInferior"/>
+                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#b"/>
+                                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#hi"/>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:first>
+                                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#tieneBeca"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cuando la beca no es aceptada</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BecaRechazada</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#ingresosCotaInferior"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#b"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#ii"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                <swrl:arguments rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#h"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#hi"/>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                        <swrl:arguments rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#h"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#hs"/>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#cantidadHermanos"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#x"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#h"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#BecaRechazada"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#b"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#y"/>
+                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#is"/>
+                                                                </swrl:arguments>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#y"/>
+                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#ii"/>
+                                                                        </swrl:arguments>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#ingresosCotaSuperior"/>
+                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#b"/>
+                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#is"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#ingresosNetosCorregidos"/>
+                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#x"/>
+                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#y"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#Alumno"/>
+                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#x"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                <rdf:first>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#hermanosCotaSuperior"/>
+                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#b"/>
+                                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#hs"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                        <rdf:first>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#hermanosCotaInferior"/>
+                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#b"/>
+                                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#hi"/>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:first>
+                                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#tieneBeca"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/bruno/ontologies/2022/5/becas-alimentarias-grupo-agarconwi#b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
