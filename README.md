@@ -7,6 +7,7 @@
 
 ## Modelado
 El modelado en Protegè se encuentra el archivo **TP-MS-conDatos.owl** (o **TP-MS-RDF.owl**, que es el archivo que utilizamos para cargar los datos a GraphQL), luego para los datos utilizados contamos con dos archivos: un excel modificado con los datos provistos por la cátedra (**BecasPlanillaModificada.xlsx**), y uno con ejemplos adicionales de forma tal que se puedan observar más casos de asignación de beca (**BecasPlanillaModificadaEjemplosExtras.xlsx**). Ambos archivos difieren del formato original entregado con el objetivo de procesar más fácilmente su contenido en el software de modelado.
+Estos datos pueden ser importados utilizando un plugin de Protegè llamado Cellfie, el cuál provee una sintaxis para extraer los individuos en una hoja de cálculo. El script utilizado para esta extracción es: `transform-rules.json`, se encuentra subido en el repositorio.
 
 ## Video con demostración del modelado en Protegè
 Durante la realización de la primer etapa subimos [este video](https://www.youtube.com/watch?v=Af2zAfW4mm0&t=202s&ab_channel=BrunoAgretti) con la intención de explicar a grandes rasgos los problemas encontrados y la solución propuesta.
