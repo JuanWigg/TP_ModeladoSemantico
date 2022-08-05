@@ -1,0 +1,1 @@
+{"Collections":[{"sheetName":"Hoja1","startColumn":"A","endColumn":"E","startRow":"2","endRow":"+","comment":"","rule":"Individual: @A*\nTypes: Alumno\nFacts: nombreCompleto @B*, dni @C*(xsd:integer), cantidadHermanos @D*(xsd:integer), ingresosNetosCorregidos @E*(xsd:integer), tieneBeca becaEnEstudio","active":true}]}
